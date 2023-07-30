@@ -118,7 +118,7 @@ h2 {
   color: #f5ca9e;
 }
 #header-game #garden .plot:after {
-  content: '🍂';
+  content: 'TAP';
   float: left;
   width: 100%;
   font-size: 1.2em;
