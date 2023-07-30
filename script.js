@@ -177,7 +177,7 @@ if (typeof localStorage !== 'undefined') {
           }
 
           addProgress(1);
-          $(v).append($('<div>').addClass('point-up').css({color: '#01FF70'}).text('+1').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          $(v).append($('<div>').addClass('point-up').css({color: '#01FF70'}).text('+0.1').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
             myGarden.plots[row][col] = plot;
             $(this).remove();
           }))
@@ -214,7 +214,7 @@ if (typeof localStorage !== 'undefined') {
 
     $('#incg-level').text(myGarden.level);
     $('#incg-progress').css({
-      width: ((myGarden.progress / myGarden.next) * 100) + '%'
+      width: ((myGarden.progress / myGarden.next) * 10) + '%'
     })
     $('#incg-harvested').text(myGarden.harvested);
     setTimeout(grow, 1000);
