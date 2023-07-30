@@ -139,7 +139,7 @@ if (typeof localStorage !== 'undefined') {
 
     if (plot.l > harvest) {
       myGarden.plots[row][col].l = 0;
-      addHarvest(1000);
+      addHarvest(100);
       $(this).removeClass('harvest').removeClass('plant')
       addProgress(Math.ceil(myGarden.level / 3));
       $(this).append($('<div>').addClass('point-up').text('+' + Math.ceil(myGarden.level / 3)).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
@@ -190,7 +190,7 @@ if (typeof localStorage !== 'undefined') {
           }))
 
         harvestall();
-        }, Math.random() * 1000 + 10);
+        }, Math.random() * 1000 + 1000);
     });
 
     save();
