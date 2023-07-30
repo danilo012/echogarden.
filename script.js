@@ -115,7 +115,7 @@ if (typeof localStorage !== 'undefined') {
     }).animate({
       h: myGarden.harvested += add
     }, {
-      duration: 1000,
+      duration: 15000,
       step: function() {
         $('#incg-harvested').text(Math.ceil(this.h));
       }
