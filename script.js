@@ -155,7 +155,7 @@ if (typeof localStorage !== 'undefined') {
     }
 
     addProgress(1);
-    $(this).addClass(plotClass[plot.t]).append($('<div>').addClass('point-up').text('+1').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $(this).addClass(plotClass[plot.t]).append($('<div>').addClass('point-up').text('❤️').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $(this).remove();
     }))
 
