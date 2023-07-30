@@ -84,7 +84,7 @@ if (typeof localStorage !== 'undefined') {
     myGarden.level += 1;
     $('#incg-level').text(myGarden.level);
 
-    if (myGarden.level % 4 == 0 || myGarden.level % 10 == 0) {
+    if (myGarden.level % 1 == 0 || myGarden.level % 1 == 0) {
       addGarden();
       drawGarden(myGarden)
     }
@@ -103,7 +103,7 @@ if (typeof localStorage !== 'undefined') {
     }
 
     $('#incg-progress').css({
-      width: ((myGarden.progress / myGarden.next) * 100) + '%'
+      width: ((myGarden.progress / myGarden.next) * 1) + '%'
     })
     save();
   };
@@ -132,7 +132,7 @@ if (typeof localStorage !== 'undefined') {
 
     if (plot.l > harvest) {
       myGarden.plots[row][col].l = 0;
-      addHarvest(1000);
+      addHarvest(10);
       $(this).removeClass('harvest').removeClass('plant')
       addProgress(Math.ceil(myGarden.level / 3));
       $(this).append($('<div>').addClass('point-up').text('+' + Math.ceil(myGarden.level / 3)).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
@@ -148,7 +148,7 @@ if (typeof localStorage !== 'undefined') {
     }
 
     addProgress(1);
-    $(this).addClass(plotClass[plot.t]).append($('<div>').addClass('point-up').text('+1').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    $(this).addClass(plotClass[plot.t]).append($('<div>').addClass('point-up').text('+0.1').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
       $(this).remove();
     }))
 
@@ -183,7 +183,7 @@ if (typeof localStorage !== 'undefined') {
           }))
 
         harvestall();
-        }, Math.random() * 1000 + 1000);
+        }, Math.random() * 10 + 10);
     });
 
     save();
