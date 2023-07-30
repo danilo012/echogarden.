@@ -14,9 +14,6 @@ var startGarden = {
     [{
       t: 0,
       l: 0
-    },{
-     t: 0,
-      l: 0
     }]
   ]
 };
