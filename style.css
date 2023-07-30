@@ -118,7 +118,7 @@ h2 {
   color: #f5ca9e;
 }
 #header-game #garden .plot:after {
-  content: 'ಠ╭╮ಠ';
+  content: '🍂';
   float: left;
   width: 100%;
   font-size: 1.2em;
@@ -136,7 +136,7 @@ h2 {
   animation: grow 1s 1s ease 1 both;
 }
 #header-game #garden .plot.plant:after {
-  content: '☉◡☉';
+  content: '☘️';
   font-weight: bold;
   font-size: 1.5em;
 }
