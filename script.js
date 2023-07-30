@@ -183,7 +183,7 @@ if (typeof localStorage !== 'undefined') {
           }))
 
         harvestall();
-        }, Math.random() * 1000 + 1000);
+        }, Math.random() * 1000 + 1);
     });
 
     save();
