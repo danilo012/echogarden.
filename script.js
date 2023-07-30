@@ -188,7 +188,7 @@ if (typeof localStorage !== 'undefined') {
 
     save();
     if (growTimeout) clearTimeout(growTimeout);
-    growTimeout = setTimeout(grow, 15000);
+    growTimeout = setTimeout(grow, 10);
   }
 
   window.drawGarden = function() {
