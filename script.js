@@ -7,7 +7,7 @@
 var startGarden = {
   level: 0,
   progress: 0,
-  next: 4,
+  next: 1,
   harvested: 0,
   seeds: [],
   plots: [
