@@ -103,7 +103,7 @@ if (typeof localStorage !== 'undefined') {
     }
 
     $('#incg-progress').css({
-      width: ((myGarden.progress / myGarden.next) * 2) + '%'
+      width: ((myGarden.progress / myGarden.next) * 100) + '%'
     })
     save();
   };
