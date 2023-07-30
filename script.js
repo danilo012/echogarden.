@@ -33,7 +33,7 @@ if (typeof localStorage !== 'undefined') {
 
 (function(myGarden) {
   var plotClass = ['plant'];
-  var harvest = 8;
+  var harvest = 1;
 
   function save() {
     if (typeof(localStorage) !== "undefined") {
