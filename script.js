@@ -1,6 +1,6 @@
 (function playGarden(){
   if(typeof $ !== "function" || typeof _ !== "function"){
-    setTimeout(playGarden, 1000);
+    setTimeout(playGarden, 15000);
     return;
   }
 
